@@ -60,7 +60,6 @@ function App() {
   <p>{campusStats.activity}</p>
   <span>Based on current campus conditions</span>
 </div>
-
 <div className="stat-card">
   <h3>Pulse Score</h3>
   <p>{campusStats.pulseScore}%</p>
