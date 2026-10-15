@@ -88,6 +88,16 @@ function App() {
         <Trends />
         
       </main>
+    <footer className="site-footer">
+        <h3>Campus Pulse</h3>
+        <p>Making campus life easier, one pulse at a time.</p>
+        <span>
+          Campus conditions shown are sample data for demonstration.
+        </span>
+        <p className="copyright">
+          © 2026 Campus Pulse
+        </p>
+      </footer>
     </div>
   );
 }

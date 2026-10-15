@@ -842,3 +842,223 @@ nav a:hover {
   color: #64748b;
   font-size: 14px;
 }
+
+
+.trend-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.trend-legend span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #475569;
+  font-size: 14px;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.low-dot {
+  background: #16a34a;
+}
+
+.medium-dot {
+  background: #ca8a04;
+}
+
+.high-dot {
+  background: #dc2626;
+}
+
+
+
+.site-footer {
+  margin-top: 60px;
+  padding: 35px 20px;
+  text-align: center;
+  background: #1e293b;
+  color: white;
+}
+
+.site-footer h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.site-footer p {
+  margin: 10px 0;
+  color: #cbd5e1;
+}
+
+.site-footer span {
+  display: block;
+  margin-top: 15px;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.site-footer .copyright {
+  margin-top: 25px;
+  font-size: 12px;
+}
+
+
+/* Responsive layout for the entire website */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  nav div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .location-grid,
+  .trend-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campus-map,
+  .locations,
+  .recommendation,
+  .reports,
+  .trends {
+    padding: 20px;
+  }
+
+  .preference-buttons {
+    flex-wrap: wrap;
+  }
+
+  .report-form select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .site-footer {
+    padding: 30px 15px;
+  }
+}
+
+
+.favorites-count {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 12px 0 20px;
+  background: #fef3c7;
+  color: #92400e;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* Modern Campus Pulse card design */
+
+.location-card,
+.stat-card,
+.selected-location {
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 4px 14px rgba(30, 41, 59, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Subtle hover effect */
+
+.location-card:hover,
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(30, 41, 59, 0.10);
+}
+
+/* Selected location */
+
+.location-card.selected {
+  border: 2px solid #000000;
+  background: #f8faff;
+}
+
+/* Card headings */
+
+.location-card h3,
+.stat-card h3,
+.selected-location h3 {
+  color: #1e293b;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* Secondary text */
+
+.location-card p,
+.stat-card span {
+  color: #64748b;
+}
+
+/* Information rows inside location cards */
+
+.location-card .info,
+.selected-location .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.location-card .info:last-child,
+.selected-location .info:last-child {
+  border-bottom: none;
+}
+
+/* Favourite buttons */
+
+.location-card button {
+  background: #eef2ff;
+  color: #4338ca;
+  border: 1px solid #e0e7ff;
+  border-radius: 9px;
+  padding: 9px 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.location-card button:hover {
+  background: #e0e7ff;
+}
+
+/* Consistent card spacing */
+
+.location-grid {
+  gap: 20px;
+}

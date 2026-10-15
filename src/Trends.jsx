@@ -33,6 +33,13 @@ function Trends() {
     <section className="trends" id="trends">
       <h2>Campus Trends</h2>
       <p>See how campus activity changes throughout the day.</p>
+      
+<div className="trend-legend">
+  <span><i className="legend-dot low-dot"></i> Low activity</span>
+  <span><i className="legend-dot medium-dot"></i> Moderate activity</span>
+  <span><i className="legend-dot high-dot"></i> High activity</span>
+</div>
+
 
       <div className="trend-grid">
         {trends.map((trend) => (
